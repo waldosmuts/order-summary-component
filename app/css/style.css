@@ -1,0 +1,19 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background: #e0e8ff;
+}
+
+main .card {
+  background: white;
+  max-width: 450px;
+}
+
+main .card .card__title {
+  color: #1f2f56;
+}
+
+main .card .card__plan {
+  background: #f5f7ff;
+}
+/*# sourceMappingURL=style.css.map */

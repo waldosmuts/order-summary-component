@@ -1,0 +1,30 @@
+// @import "reset";
+@import "variables";
+
+// .attribution {
+//     font-size: 11px;
+//     text-align: center;
+//     a {
+//         color: hsl(228, 45%, 44%);
+//     }
+// }
+
+body {
+    font-family: $-f-red-hat;
+    font-weight: 500;
+    // background: url(../../images/pattern-background-mobile.svg);
+    background: $-c-bg;
+}
+
+main {
+    .card {
+        background: $-c-card;
+        max-width: 450px;
+        .card__title {
+            color: $-c-header;
+        }
+        .card__plan {
+            background: $-c-shadow;
+        }
+    }
+}
