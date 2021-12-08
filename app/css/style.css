@@ -1,19 +1,88 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
+  background: no-repeat url(../../images/pattern-background-mobile.svg), #e0e8ff;
   background: #e0e8ff;
 }
 
-main .card {
+main .main__card {
   background: white;
   max-width: 450px;
 }
 
-main .card .card__title {
+main .main__card .card__title {
+  color: #1f2f56;
+  font-size: 1.4rem;
+}
+
+main .main__card .card__desc {
+  color: #7280a7;
+  font-size: 0.95rem;
+}
+
+main .main__card .card__order {
+  background: #f5f7ff;
+}
+
+main .main__card .card__order .order__plan .plan__price, main .main__card .card__order .order__plan .plan__title {
+  font-size: 0.85rem;
+}
+
+main .main__card .card__order .order__plan .plan__title {
   color: #1f2f56;
 }
 
-main .card .card__plan {
-  background: #f5f7ff;
+main .main__card .card__order .order__plan .plan__price {
+  color: #7280a7;
+}
+
+main .main__card .card__order .order__change {
+  color: #3829e0;
+  font-size: 0.75rem;
+}
+
+main .main__card .card__pay, main .main__card .card__cancel {
+  width: calc(100% - 3rem);
+  font-size: 0.95rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main .main__card .card__pay {
+  background: #3829e0;
+  color: white;
+}
+
+main .main__card .card__cancel {
+  color: #7280a7;
+}
+
+footer {
+  color: #7280a7;
+}
+
+footer a {
+  color: #3829e0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: no-repeat url(../../images/pattern-background-desktop.svg), #e0e8ff;
+  }
+  main .main__card .card__title {
+    font-size: 1.75rem;
+  }
+  main .main__card .card__desc {
+    color: #7280a7;
+    font-size: 1rem;
+  }
+  main .main__card .card__pay, main .main__card .card__cancel {
+    width: calc(100% - 6rem);
+  }
+  main .main__card .card__order .order__plan .plan__price, main .main__card .card__order .order__plan .plan__title {
+    font-size: 1rem;
+  }
+  main .main__card .card__order .order__change {
+    font-size: 0.85rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

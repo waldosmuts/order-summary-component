@@ -1,30 +1,95 @@
-// @import "reset";
 @import "variables";
-
-// .attribution {
-//     font-size: 11px;
-//     text-align: center;
-//     a {
-//         color: hsl(228, 45%, 44%);
-//     }
-// }
 
 body {
     font-family: $-f-red-hat;
     font-weight: 500;
-    // background: url(../../images/pattern-background-mobile.svg);
+    background: no-repeat url(../../images/pattern-background-mobile.svg), $-c-bg;
     background: $-c-bg;
 }
 
 main {
-    .card {
+    .main__card {
         background: $-c-card;
         max-width: 450px;
         .card__title {
             color: $-c-header;
+            font-size: 1.4rem;
         }
-        .card__plan {
+        .card__desc {
+            color: $-c-gray;
+            font-size: 0.95rem;
+        }
+        .card__order {
             background: $-c-shadow;
+            .order__plan {
+                .plan__price, .plan__title {
+                    font-size: 0.85rem;
+                }
+                .plan__title {
+                    color: $-c-header;
+                }
+                .plan__price {
+                    color: $-c-gray;
+                }
+            }
+            .order__change {
+                color: $-c-highlight;
+                font-size: 0.75rem;
+            }
         }
+        .card__pay, .card__cancel {
+            width: calc(100% - 3rem);
+            font-size: 0.95rem;
+            font-family: $-f-red-hat;
+        }
+        .card__pay {
+            background: $-c-highlight;
+            color: $-c-card;
+        }
+        .card__cancel {
+            color: $-c-gray;
+        }
+    }
+}
+
+footer {
+    color: $-c-gray;
+    a {
+        color: $-c-highlight;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background: no-repeat url(../../images/pattern-background-desktop.svg), $-c-bg;
+    }
+
+    main {
+        .main__card {
+            .card__title {
+                font-size: 1.75rem;
+            }
+            .card__desc {
+                color: $-c-gray;
+                font-size: 1rem;
+            }
+            .card__pay, .card__cancel {
+                width: calc(100% - 6rem);
+            }
+            .card__order {
+                .order__plan {
+                    .plan__price, .plan__title {
+                        font-size: 1rem;
+                    }
+                }
+                .order__change {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    footer {
+
     }
 }
